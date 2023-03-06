@@ -1,0 +1,19 @@
+<div class="position-absolute sticky-top cart-top d-none d-sm-block">
+    <button type="button" class="btn btn-secondary rounded-pill position-relative top-50" routerLink="/checkout">
+        <img src="../../../assets/icons/shopping_cart.svg">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{this.cart.length}}
+            <span class="visually-hidden">unread messages</span>
+        </span>
+    </button>
+</div>
+
+<div class="fixed-bottom d-sm-none text-end m-3">
+    <button type="button" class="btn btn-secondary rounded-pill position-relative top-50" routerLink="/checkout">
+        <img src="../../../assets/icons/shopping_cart.svg">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{this.cart.length}}
+            <span class="visually-hidden">unread messages</span>
+        </span>
+    </button>
+</div>

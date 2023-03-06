@@ -1,0 +1,132 @@
+{
+    "HOME": {
+        "TITLE": "LOGIN",
+        "DESCRIPTION": "Please enter your login and password!",
+        "ERROR_USER": "Check you user info!",
+        "FORGOT_PASSWORD": "Forgot password?",
+        "REGISTER": "Don't have an account?",
+        "REGISTER_USER": "Sign Up"
+    },
+    "REGISTER": {
+        "TITLE": "REGISTER",
+        "DESCRIPTION": "Please enter your information to register",
+        "NAME": "Full Name",
+        "NAME_PLACEHOLDER": "You full name",
+        "E-MAIL": "E-mail",
+        "E-MAIL_PLACEHOLDER": "You email",
+        "PASSWORD": "Password",
+        "PASSWORD_PLACEHOLDER": "You password",
+        "PHONE": "Phone",
+        "PHONE_PLACEHOLDER": "You phone",
+        "ZIP": "Zip",
+        "ZIP_PLACEHOLDER": "You zip code",
+        "COUNTRY": "Country",
+        "COUNTRY_PLACEHOLDER": "You country",
+        "APARTMENT": "Apartment",
+        "APARTMENT_PLACEHOLDER": "You apartment",
+        "STREET": "Street",
+        "STREET_PLACEHOLDER": "You street",
+        "CITY": "City",
+        "CITY_PLACEHOLDER": "You city",
+        "REGISTER": "Register",
+        "REGISTER_INFO": "Do you have an account?",
+        "REGISTER_SIGNIN": "Sign In"
+    },
+    "MENU": {
+        "DASHBOARD": "Dashboard",
+        "PROFILE": "Profile",
+        "REGISTER_PRODUCT": "Register Products",
+        "BUY": "Buy",
+        "CHECKOUT": "CheckOut",
+        "MY_SHOPPING": "My shopping",
+        "EXIT": "Log Out"
+    },
+    "DASHBOARD": {
+        "WELCOME": "Welcome!",
+        "DESCRIPTION1": "Hello everyone my name is",
+        "DESCRIPTION2": "I'm a ",
+        "DESCRIPTION3": "this is my first fullstack project which i did to improve my skills both Front and Back (NodeJS), feel free to use this little demo and you can also check the source code (font and back) in my GitHub repository"
+    },
+    "PROFILE": {
+        "TITLE": "Edit my profile",
+        "DESCRIPTION": "Please edit your information",
+        "NAME": "Full Name",
+        "NAME_PLACEHOLDER": "You full name",
+        "E-MAIL": "E-mail",
+        "E-MAIL_PLACEHOLDER": "You email",
+        "PHONE": "Phone",
+        "PHONE_PLACEHOLDER": "You phone",
+        "ZIP": "Zip",
+        "ZIP_PLACEHOLDER": "You zip code",
+        "COUNTRY": "Country",
+        "COUNTRY_PLACEHOLDER": "You country",
+        "APARTMENT": "Apartment",
+        "APARTMENT_PLACEHOLDER": "You apartment",
+        "STREET": "Street",
+        "STREET_PLACEHOLDER": "You street",
+        "CITY": "City",
+        "CITY_PLACEHOLDER": "You city",
+        "PASSWORD": "Password",
+        "PASSWORD_PLACEHOLDER": "You password",
+        "REGISTER": "Edit profile",
+        "SUCCESS": "User data was updated"
+    },
+    "REGISTER_PRODUCT": {
+        "TITLE": "Register a Product",
+        "DESCRIPTION": "Please edit product information",
+        "NAME": "Product Name",
+        "PRICE": "Price (Max:500)",
+        "STOCK": "Stock (Max:500)",
+        "PRODUCT_DESCRIPTION": "Description",
+        "RICH_DESCRIPTION": "Rich Description",
+        "IMAGE": "Image",
+        "REGISTER": "Upload Product",
+        "SUCCESS": "Product uploaded"
+    },
+    "BUY": {
+        "TITLE": "Product list",
+        "BUTTON": " Add to Cart",
+        "NO_PRODUCT": "There are no product",
+        "ADD_PRODUCT": "Add product"
+    },
+    "CHECKOUT": {
+        "CONTINUE": "Continue shopping",
+        "CLEAN": "Clean cart",
+        "TITLE": "Shopping cart",
+        "DESCRIPTION1": "You have",
+        "DESCRIPTION2": "items in your cart",
+        "USER_DETAIL": "User details",
+        "USER_NAME": "User Name",
+        "USER_E-MAIL": "User E-mail",
+        "USER_CITY": "User City",
+        "USER_PHONE": "User Phone",
+        "CANCEL": "Cancel",
+        "ACCEPT": "Accept",
+        "SUCCESS": "Purchase made"
+    },
+    "MY_SHOPPING": {
+        "TITLE": "Order Detail",
+        "STATUS": "Status :",
+        "DATE": "Date :",
+        "ADDRESS": "Address destination",
+        "COUNTRY": "Country :",
+        "CITY": "City :",
+        "DETAIL": "View Details",
+        "NOT_FOUND": "There are no orders",
+        "GO_BUY": "Go buy"
+    },
+    "MY_SHOPPING_DETAIL": {
+        "EXIT": "Exit Detail",
+        "TITLE": "Shopping Detail",
+        "DESCRIPTION1": "You bought",
+        "DESCRIPTION2": "items",
+        "USER_DETAIL": "User details",
+        "USER_NAME": "User Name",
+        "USER_E-MAIL": "User E-mail",
+        "USER_CITY": "User City",
+        "USER_PHONE": "User Phone"
+    },
+    "LANGUAGE": {
+        "TITLE": "Change to spanish"
+    }
+}

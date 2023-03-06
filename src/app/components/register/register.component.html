@@ -1,0 +1,95 @@
+<section class='vh-100  gradient-custom'>
+
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100 ">
+            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <form novalidate (ngSubmit)="onSubmit()" [formGroup]="userData">
+                                <h2 class="fw-bold mb-2 text-uppercase">{{'REGISTER.TITLE' | translate}}</h2>
+                                <p class="text-white-50 mb-5">{{'REGISTER.DESCRIPTION' | translate}}</p>
+
+                                <div class='row'>
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.NAME' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.NAME_PLACEHOLDER' | translate}}"
+                                            formControlName="user" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.E-MAIL' | translate}}</label>
+                                        <input type="email" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.E-MAIL_PLACEHOLDER' | translate}}"
+                                            formControlName="email" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.PASSWORD' | translate}}</label>
+                                        <input type="password" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.PASSWORD_PLACEHOLDER' | translate}}"
+                                            formControlName="password" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.PHONE' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.PHONE_PLACEHOLDER' | translate}}"
+                                            formControlName="phone" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.ZIP' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.ZIP_PLACEHOLDER' | translate}}"
+                                            formControlName="zip" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.COUNTRY' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.COUNTRY_PLACEHOLDER' | translate}}"
+                                            formControlName="country" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.APARTMENT' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.APARTMENT_PLACEHOLDER' | translate}}"
+                                            formControlName="apartment" />
+                                    </div>
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER.STREET' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.STREET_PLACEHOLDER' | translate}}"
+                                            formControlName="street" />
+                                    </div>
+                                    <div class="form-outline form-white mb-4 col-12 col-md-4">
+                                        <label class="form-label">{{'REGISTER.CITY' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="{{'REGISTER.CITY_PLACEHOLDER' | translate}}"
+                                            formControlName="city" />
+                                    </div>
+
+                                </div>
+
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">{{'REGISTER.REGISTER' |
+                                    translate}}</button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <p class="mb-0">{{'REGISTER.REGISTER_INFO' | translate}} <a routerLink="/"
+                                    class="text-white-50 fw-bold">{{'REGISTER.REGISTER_SIGNIN' | translate}}</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

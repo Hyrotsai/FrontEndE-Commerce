@@ -1,0 +1,9 @@
+<section class='vh-100 gradient-custom'>
+    <div class='d-flex flex-column justify-content-center align-items-center vh-100'>
+        <h1 class='text-white fw-bold'>Error 404</h1>
+        <h1 class='text-white fw-bold'>Page Not Found</h1>
+        <img src="../../../assets/img/error404.png" alt="Descripción de la imagen" height='400vh' width='500vh'>
+        <button class='btn btn-primary' routerLink="/dashboard" *ngIf="state">Go Back</button>
+        <button class='btn btn-primary' routerLink="/" *ngIf="!state">Go Back</button>
+    </div>
+</section>

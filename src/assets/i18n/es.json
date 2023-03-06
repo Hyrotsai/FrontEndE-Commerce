@@ -1,0 +1,132 @@
+{
+    "HOME": {
+        "TITLE": "LOGIN",
+        "DESCRIPTION": "Por favor digita tu usuario y contraseña",
+        "ERROR_USER": "Revisa tu informacion de usuario",
+        "FORGOT_PASSWORD": "Olvidaste tu contraseña?",
+        "REGISTER": "Aun no tienes cuenta?",
+        "REGISTER_USER": "Registrate"
+    },
+    "REGISTER": {
+        "TITLE": "REGISTRAR",
+        "DESCRIPTION": "Por favor digita tu informacion de usuario",
+        "NAME": "Nombre Completo",
+        "NAME_PLACEHOLDER": "Tu nombre completo",
+        "E-MAIL": "E-mail",
+        "E-MAIL_PLACEHOLDER": "Tu email",
+        "PASSWORD": "Contraseña",
+        "PASSWORD_PLACEHOLDER": "Tu contraseña",
+        "PHONE": "Telefono",
+        "PHONE_PLACEHOLDER": "Tu telefono",
+        "ZIP": "Zip",
+        "ZIP_PLACEHOLDER": "Tu codigo zip",
+        "COUNTRY": "Pais",
+        "COUNTRY_PLACEHOLDER": "Tu pais",
+        "APARTMENT": "Apartamento",
+        "APARTMENT_PLACEHOLDER": "Tu apartamento",
+        "STREET": "Calle",
+        "STREET_PLACEHOLDER": "Tu calle",
+        "CITY": "Ciudad",
+        "CITY_PLACEHOLDER": "Tu ciudad",
+        "REGISTER": "Registrarse",
+        "REGISTER_INFO": "Tienes una cuenta?",
+        "REGISTER_SIGNIN": "Iniciar Session"
+    },
+    "MENU": {
+        "DASHBOARD": "Panel",
+        "PROFILE": "Perfil",
+        "REGISTER_PRODUCT": "Registrar Productos",
+        "BUY": "Comprar",
+        "CHECKOUT": "CheckOut",
+        "MY_SHOPPING": "Mis Compras",
+        "EXIT": "Cerrar Session"
+    },
+    "DASHBOARD": {
+        "WELCOME": "Bienvenido!",
+        "DESCRIPTION1": "Hola a todos mi nombre es",
+        "DESCRIPTION2": "Yo soy un ",
+        "DESCRIPTION3": "este es mi primer proyecto fullstack que hice para mejorar mis habilidades tanto en el Front como en el Back (NodeJS), siéntase libre de usar esta pequeña demostración y también puede consultar el código fuente (Front y Back) en mi repositorio de GitHub"
+    },
+    "PROFILE": {
+        "TITLE": "Editar mi perfil",
+        "DESCRIPTION": "Por favor edita tu informacion",
+        "NAME": "Nombre Completo",
+        "NAME_PLACEHOLDER": "Tu nombre completo",
+        "E-MAIL": "E-mail",
+        "E-MAIL_PLACEHOLDER": "Tu email",
+        "PHONE": "Telefono",
+        "PHONE_PLACEHOLDER": "Tu telefono",
+        "ZIP": "Zip",
+        "ZIP_PLACEHOLDER": "Tu codigo zip",
+        "COUNTRY": "Pais",
+        "COUNTRY_PLACEHOLDER": "Tu pais",
+        "APARTMENT": "Apartamento",
+        "APARTMENT_PLACEHOLDER": "Tu apartamento",
+        "STREET": "Calle",
+        "STREET_PLACEHOLDER": "Tu calle",
+        "CITY": "Ciudad",
+        "CITY_PLACEHOLDER": "Tu ciudad",
+        "PASSWORD": "Contraseña",
+        "PASSWORD_PLACEHOLDER": "Tu contraseña",
+        "REGISTER": "Editar Perfil",
+        "SUCCESS": "Los datos del usuario fueron actualizados"
+    },
+    "REGISTER_PRODUCT": {
+        "TITLE": "Registrar un Producto",
+        "DESCRIPTION": "Llena la informacion del producto",
+        "NAME": "Nombre del producto",
+        "PRICE": "Precio (Max:500)",
+        "STOCK": "Cantidad (Max:500)",
+        "PRODUCT_DESCRIPTION": "Descripcion",
+        "RICH_DESCRIPTION": "Descripcion larga",
+        "IMAGE": "Imagen",
+        "REGISTER": "Subir Producto",
+        "SUCCESS": "Producto enviado"
+    },
+    "BUY": {
+        "TITLE": "Lista de Producto",
+        "BUTTON": "Añadir al carrito",
+        "NO_PRODUCT": "No hay productos",
+        "ADD_PRODUCT": "Añadir producto"
+    },
+    "CHECKOUT": {
+        "CONTINUE": "Continuar comprando",
+        "CLEAN": "Limpiar carrito",
+        "TITLE": "Carrito de compras",
+        "DESCRIPTION1": "Usted tiene",
+        "DESCRIPTION2": "articulos en tu carrito",
+        "USER_DETAIL": "Detalles del usuario",
+        "USER_NAME": "Nombre de usuario",
+        "USER_E-MAIL": "E-mail del usuario",
+        "USER_CITY": "Ciudad",
+        "USER_PHONE": "Telefono",
+        "CANCEL": "Cancelar",
+        "ACCEPT": "Aceptar",
+        "SUCCESS": "Compra realizada"
+    },
+    "MY_SHOPPING": {
+        "TITLE": "Detalles de la ordenes",
+        "STATUS": "Estado :",
+        "DATE": "Fecha :",
+        "ADDRESS": "Direccion de destino",
+        "COUNTRY": "Pais :",
+        "CITY": "Ciudad :",
+        "DETAIL": "Ver Detalles",
+        "NOT_FOUND": "No existen ordenes",
+        "GO_BUY": "Ir a compras"
+    },
+    "MY_SHOPPING_DETAIL": {
+        "EXIT": "Salir de detalles",
+        "TITLE": "Detalles de la compra",
+        "DESCRIPTION1": "Usted compro",
+        "DESCRIPTION2": "articulos",
+        "USER_DETAIL": "Detalles del usuario",
+        "USER_NAME": "Nombre de usuario",
+        "USER_E-MAIL": "E-mail del usuario",
+        "USER_CITY": "Ciudad",
+        "USER_PHONE": "Telefono"
+    },
+    "LANGUAGE": {
+        "TITLE": "Cambiar a ingles"
+    }
+}

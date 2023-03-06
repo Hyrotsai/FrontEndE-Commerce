@@ -1,0 +1,47 @@
+<div class='container-fluid' *ngIf="productList">
+    <div class='row d-flex justify-content-center' *ngIf="!orderCero">
+        <div *ngFor="let item of productList; let i = index" class="col-md-3 col-6">
+            <div class="card mb-3">
+                <!-- Product image-->
+                <img class="card-img-top" [src]="item.image" />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h3 class="fw-bolder d-inline">{{item.name}}</h3>
+                        <h4 class="fw-bolder d-none d-sm-block">{{item.description}}</h4>
+                        <h5 class="fw-bolder d-none d-sm-block">{{item.richDescription}}</h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                        </div> ${{item.price}}
+                    </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class='text-center pb-2'>
+                        <a class="btn btn-primary col-2 mx-2" (click)="productStock('restar', i)">-</a>
+                        <input type="number" value="1" disabled='true' class='col-2 text-center'
+                            [(ngModel)]="productCount[i]">
+                        <a class="btn btn-primary col-2 mx-2" (click)="productStock('sumar', i)">+</a>
+                    </div>
+                    <div class="text-center"><a class="btn btn-outline-primary mt-auto"
+                            (click)="addCart(item, i)">{{'BUY.BUTTON' |
+                            translate}}</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='container-fluid' style='height: 85vh;' *ngIf="orderCero">
+    <div class='text-center'>
+        <h1 class='text-white'>{{'BUY.NO_PRODUCT' | translate}}</h1>
+        <button class='btn btn-primary' routerLink="/dashboard/register-product">{{'BUY.ADD_PRODUCT' |
+            translate}}</button>
+    </div>
+</div>

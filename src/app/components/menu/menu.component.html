@@ -1,0 +1,89 @@
+<div class="position-absolute menu-nav">
+    <nav class="navbar navbar-collapse bg-light">
+        <div class="container d-flex justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- <div>
+            Texto aqui
+        </div> -->
+        <div class="dropdown d-flex flex-column text-start h-100">
+            <a class="navbar-brand mt-4 mb-4" routerLink="/dashboard" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/dashboard.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.DASHBOARD' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" routerLink="/dashboard/user-profile" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/person.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.PROFILE' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" routerLink="/dashboard/register-product" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/inventory.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.REGISTER_PRODUCT' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" routerLink="/dashboard/buy" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/shopping_cart_checkout.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.BUY' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" routerLink="/checkout" style='cursor: pointer;' data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/credit_card.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.CHECKOUT' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" routerLink="/dashboard/my-shopping" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/add_shopping_cart.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.MY_SHOPPING' | translate}}
+            </a>
+            <a class="navbar-brand mb-4" (click)="logOut()" routerLink="/" style='cursor: pointer;'
+                data-bs-dismiss="offcanvas">
+                <img src="../../../assets/icons/logout.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                {{'MENU.EXIT' | translate}}
+            </a>
+
+
+            <div class="position-absolute bottom-0 start-0">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                        [checked]="langBoolean" (change)="changeLanguage($event.target)">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">{{ 'LANGUAGE.TITLE' | translate
+                        }}</label>
+                </div>
+            </div>
+            <!-- Si se añaden mas idioma -->
+            <!-- <div class="position-absolute bottom-0 start-0">
+                <label>
+                    {{ 'LANGUAGE.TITLE' | translate }}
+                    <select #langSelect (change)="switchLanguage(langSelect.value)">
+                        <option *ngFor="let lang of getLangs()" [value]="lang" [selected]="lang === currentLang()">{{
+                            lang }}
+                        </option>
+                    </select>
+                </label>
+            </div> -->
+
+        </div>
+    </div>
+</div>

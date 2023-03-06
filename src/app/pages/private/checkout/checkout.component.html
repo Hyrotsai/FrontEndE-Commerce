@@ -1,0 +1,155 @@
+<section class="h-100 h-custom gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4 ">
+
+
+                        <div class="alert alert-success d-flex align-items-center justify-content-center" role="alert"
+                            *ngIf="success">
+                            <div>
+                                <h5>{{'CHECKOUT.SUCCESS' | translate}}</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-7">
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <h5 class="mb-3"><button class="text-white btn btn-primary"
+                                                routerLink="/dashboard/buy">{{'CHECKOUT.CONTINUE' | translate}}
+                                            </button></h5>
+                                    </div>
+                                    <div class='col-lg-auto offset-5'>
+                                        <h5 class="mb-3"><button class="text-white btn btn-primary"
+                                                (click)="cleanCart()">{{'CHECKOUT.CLEAN' | translate}}</button></h5>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <div>
+                                        <p class="mb-1">{{'CHECKOUT.TITLE' | translate}}</p>
+                                        <p class="mb-0">{{'CHECKOUT.DESCRIPTION1' | translate}} {{cart.length}}
+                                            {{'CHECKOUT.DESCRIPTION2' | translate}}</p>
+                                    </div>
+
+                                </div>
+
+                                <div *ngFor="let item of cart; let i = index">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img [src]="item.product.image" class="img-fluid rounded-3"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5>{{item.product.name}}</h5>
+                                                        <p class="small mb-0">{{item.product.description}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">{{item.quantity}}</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0">${{item.product.price}}</h5>
+                                                    </div>
+                                                    <button style="color: #cecece;" class='btn btn-primary'
+                                                        (click)="deleteItem(i)"><i
+                                                            class="fas fa-trash-alt">X</i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-5" *ngIf="user">
+
+                                <div class="card bg-primary text-white rounded-3">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            <h5 class="mb-0">{{'CHECKOUT.USER_DETAIL' | translate}}</h5>
+                                        </div>
+
+                                        <form class="mt-4">
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" id="typeName" class="form-control form-control-lg"
+                                                    placeholder="{{user.name}}" disabled='true' />
+                                                <label class="form-label" for="typeName">{{'CHECKOUT.USER_NAME' |
+                                                    translate}}</label>
+                                            </div>
+
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="text" class="form-control form-control-lg"
+                                                    placeholder="{{user.email}}" disabled='true' />
+                                                <label class="form-label" for="typeText">{{'CHECKOUT.USER_E-MAIL' |
+                                                    translate}}</label>
+                                            </div>
+
+                                            <div class="row mb-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-outline form-white">
+                                                        <input type="text" id="typeExp"
+                                                            class="form-control form-control-lg" placeholder="MM/YYYY"
+                                                            placeholder="{{user.city}}" disabled='true' />
+                                                        <label class="form-label" for="typeExp">{{'CHECKOUT.USER_CITY' |
+                                                            translate}}</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-outline form-white">
+                                                        <input type="password" class="form-control form-control-lg"
+                                                            placeholder="{{user.phone}}" disabled='true' />
+                                                        <label class="form-label" for="typeText">{{'CHECKOUT.USER_PHONE'
+                                                            | translate}}</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                        <hr class="my-4">
+
+                                        <div class="d-flex justify-content-between mb-4">
+                                            <h3 class="mb-2">Total</h3>
+                                            <h3 class="mb-2">${{total}}</h3>
+                                        </div>
+
+                                        <div class='d-flex justify-content-between mb-4'>
+                                            <button type="button" class="btn btn-info btn-block btn-lg"
+                                                routerLink="/dashboard/buy">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>{{'CHECKOUT.CANCEL' | translate}}</span>
+                                                </div>
+                                            </button>
+
+                                            <button type="button" class="btn btn-info btn-block btn-lg"
+                                                (click)="sendCart()">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>{{'CHECKOUT.ACCEPT' | translate}}</span>
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-menu></app-menu>
+
+</section>

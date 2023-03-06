@@ -1,0 +1,83 @@
+<section class='position-relative vh-100  gradient-custom'>
+
+    <div class=" container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100 ">
+            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productData">
+                                <h2 class="fw-bold mb-2 text-uppercase">{{'REGISTER_PRODUCT.TITLE' | translate}}</h2>
+                                <p class="text-white-50 mb-5">{{'REGISTER_PRODUCT.DESCRIPTION' | translate}}</p>
+
+                                <div class='row'>
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.NAME' | translate}}</label>
+                                        <input type="text" class="form-control form-control-lg" maxlength='13'
+                                            formControlName="name" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.PRICE' | translate}}</label>
+                                        <input type="number" class="form-control form-control-lg" min='0' max='500'
+                                            formControlName="price" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-4">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.STOCK' | translate}}</label>
+                                        <input type="number" class="form-control form-control-lg" min='0' max='500'
+                                            formControlName="countInStock" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-6 col-md-6">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.PRODUCT_DESCRIPTION' |
+                                            translate}}</label>
+                                        <input type="text" class="form-control form-control-lg" maxlength="13"
+                                            formControlName="description" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-12 col-md-6">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.RICH_DESCRIPTION' |
+                                            translate}}</label>
+                                        <input type="text" class="form-control form-control-lg" maxlength="13"
+                                            formControlName="richDescription" />
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4 col-12 col-md-12">
+                                        <label class="form-label">{{'REGISTER_PRODUCT.IMAGE' | translate}}</label>
+                                        <input #imageInput type="file" accept="image/png, image/jpeg"
+                                            class="form-control form-control-lg" (change)="processFile(imageInput)"
+                                            formControlName="image" />
+                                    </div>
+
+                                </div>
+
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit"
+                                    [disabled]='productData.invalid'>{{'REGISTER_PRODUCT.REGISTER' |
+                                    translate}}</button>
+
+                            </form>
+
+                        </div>
+
+                        <div>
+                        </div>
+
+                        <div class="alert alert-success d-flex align-items-center justify-content-center" role="alert"
+                            *ngIf="success">
+                            <div>
+                                <h5>{{'REGISTER_PRODUCT.SUCCESS' | translate}}</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-menu></app-menu>
+
+</section>
