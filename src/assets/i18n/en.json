@@ -45,7 +45,8 @@
         "WELCOME": "Welcome!",
         "DESCRIPTION1": "Hello everyone my name is",
         "DESCRIPTION2": "I'm a ",
-        "DESCRIPTION3": "this is my first fullstack project which i did to improve my skills both Front and Back (NodeJS), feel free to use this little demo and you can also check the source code (font and back) in my GitHub repository"
+        "DESCRIPTION3": "this is my first fullstack project which i did to improve my skills both Front and Back (NodeJS), feel free to use this little demo and you can also check the source code (font and back) in my GitHub repository",
+        "CONECTOR": "and "
     },
     "PROFILE": {
         "TITLE": "Edit my profile",
