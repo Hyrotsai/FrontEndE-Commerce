@@ -50,7 +50,10 @@ export class LoginComponent implements OnInit {
       //INFO Cambiara el estado de login a true
       this.AuthService.login()
       this.Router.navigate(['/dashboard'])
-    }, _err => this.isLoggedError = true)
+    }, _err => {
+      this.loading = false
+      this.isLoggedError = true
+    })
     this.userData.reset()
   }
 

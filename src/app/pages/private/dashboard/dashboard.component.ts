@@ -13,11 +13,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private UserService: UserService,
-    private Router: Router
-  ) {
-    // this.UserService.getUserData().subscribe(data => { this.userData = data })
-    // console.log(this.userData)
-  }
+    private Router: Router) { }
   userData: any = ''
 
   async ngOnInit(): Promise<void> {

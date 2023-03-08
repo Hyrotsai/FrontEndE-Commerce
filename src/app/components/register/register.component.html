@@ -1,4 +1,4 @@
-<section class='vh-100  gradient-custom'>
+<section class='vh-100  gradient-custom' *ngIf="!loading">
 
     <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100 ">
@@ -93,3 +93,5 @@
         </div>
     </div>
 </section>
+
+<app-loading *ngIf="loading"></app-loading>

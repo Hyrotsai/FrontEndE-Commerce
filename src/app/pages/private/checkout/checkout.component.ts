@@ -22,6 +22,7 @@ export class CheckoutComponent implements OnInit {
   total: any = 0
   user: any
   success: Boolean = false
+  enableRedeem: Boolean = false
 
   ngOnInit(): void {
     this.cart = this.CartService.getInfoCart()
@@ -30,6 +31,11 @@ export class CheckoutComponent implements OnInit {
   }
 
   getTotalPrices() {
+    if (this.cart.length == 0) {
+      this.total = 0
+      this.enableRedeem = false
+    }
+    if (this.cart.length >= 1) this.enableRedeem = true
     this.cart.forEach((data: any) => {
       this.total += data.quantity * data.product.price
     })
@@ -39,12 +45,14 @@ export class CheckoutComponent implements OnInit {
     this.cart = []
     localStorage.removeItem('cart')
     this.ComunicationService.cleanCart()
+    this.getTotalPrices()
   }
 
   deleteItem(index: any) {
     this.cart.splice(index, 1)
     localStorage.setItem('cart', JSON.stringify(this.cart))
     this.ComunicationService.enviarProductos(this.cart)
+    this.getTotalPrices()
   }
 
   sendCart() {
