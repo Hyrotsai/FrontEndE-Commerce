@@ -31,10 +31,8 @@ export class CheckoutComponent implements OnInit {
   }
 
   getTotalPrices() {
-    if (this.cart.length == 0) {
-      this.total = 0
-      this.enableRedeem = false
-    }
+    this.total = 0
+    if (this.cart.length == 0) this.enableRedeem = false
     if (this.cart.length >= 1) this.enableRedeem = true
     this.cart.forEach((data: any) => {
       this.total += data.quantity * data.product.price
